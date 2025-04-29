@@ -28,6 +28,7 @@ import AutoSnapMobileApp from "./assets/app-development-portfolio/AutoSnap-Mobil
 export { logoImg };
 
 export const companyDetails = {
+  name: "MANYA AI",
   phone: "+91-7411331718",
   phone2: "+91-9345361250.",
   address: "ABC Street, City, Country",
