@@ -49,19 +49,25 @@ const Home = () => {
           data-aos="fade-up"
           className="wrapper text-center flex flex-col gap-5 justify-center items-center h-full relative z-10"
         >
-          <p className="sub-heading">
+          <p className="text-[2.25rem] md:text-[2.5rem] font-bold leading-tight text-white/80">
             Welcome to
             {/* <span className="text-primary font-semibold">
               MANYA AI
             </span> */}
           </p>
           <h1 className="heading text-stroke">MANYA AI</h1>
-          <p className="sub-heading">
-            AI Meets Integrity - Empowering Innovation with Intelligence
+          <p className="max-w-[56rem] mt-2 text-base text-white/80">
+            In today's fast-evolving digital landscape, businesses need
+            innovative and reliable solutions to stay ahead. At{" "}
+            <strong>MANYA AI</strong> , we offer a wide range of services that
+            help you transform, scale, and optimize your operations. Whether
+            you're looking to develop a cutting-edge mobile app, create stunning
+            web designs, or leverage the power of artificial intelligence, our
+            team is here to bring your vision to life.
           </p>
         </div>
       </section>
-      <div
+      {/* <div
         data-aos="fade-up"
         className="md:-mt-[7rem] py-[2rem] relative z-10 max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-5"
       >
@@ -117,7 +123,7 @@ const Home = () => {
             Our full-stack development services provideend - to -end solutions
           </p>
         </div>
-      </div>
+      </div> */}
       <section className="text-white wrapper py-[3rem]">
         <div className="grid lg:grid-cols-2 gap-10 mt-7">
           <div data-aos="fade-up" className="hidden lg:block h-full">

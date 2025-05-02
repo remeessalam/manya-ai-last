@@ -1,6 +1,6 @@
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { logoImg, routes } from "../../constant";
 import { X } from "lucide-react";
@@ -8,14 +8,35 @@ import { Helmet } from "react-helmet";
 
 const WebsiteHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+
   const { pathname } = useLocation();
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY < lastScrollY) {
+        setShowHeader(true); // scrolling up
+      } else if (window.scrollY > lastScrollY) {
+        setShowHeader(false); // scrolling down
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-white backdrop-blur-md z-50 text-black">
+    <div
+      className={`py-4 fixed top-0 w-full bg-secondary/60 backdrop-blur-md z-50 text-white transition-transform duration-700 ${
+        showHeader ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
           <Helmet>

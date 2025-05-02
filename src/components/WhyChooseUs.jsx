@@ -51,14 +51,14 @@ const WhyChooseUs = () => {
       className="py-[5rem] relative bg-center bg-cover min-h-[50vh]"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div className="absolute top-0 w-full h-full bg-secondary/90"></div>
+      <div className="absolute top-0 w-full h-full bg-secondary/40"></div>
       <div data-aos="fade-up" className="max-w-7xl mx-auto">
         <div
           className="mx-5 rounded-xl bg-center bg-cover relative"
           style={{ backgroundImage: `url(${bannerImg})` }}
         >
           <div className="absolute top-0 w-full h-full bg-secondary/50"></div>
-          <div className="py-[3rem] px-5 bg-primary/70 rounded-xl text-white relative z-10">
+          <div className="py-[3rem] px-5 bg-primary/10 rounded-xl text-white relative z-10">
             <h1
               data-aos="fade-up"
               className="heading-2 max-w-[60rem] mx-auto text-center"

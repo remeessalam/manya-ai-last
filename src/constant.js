@@ -33,9 +33,12 @@ export const companyDetails = {
   phone2: "+91-9345361250.",
   address: "ABC Street, City, Country",
   email: "sales@manya.ai",
-  linkedin: "",
-  instagram: "",
-  twitter: "",
+  linkedin:
+    "https://www.linkedin.com/company/manya-ai/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BCqwVFQ1IT32dpaOyV2wvdg%3D%3D",
+  instagram: "https://www.instagram.com/manya.ai_?igsh=dW11YXJvd29vMWp1",
+  twitter: "https://x.com/manya_ai_?s=11",
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=7411331718&text&type=phone_number&app_absent=0",
 };
 
 export const routes = [

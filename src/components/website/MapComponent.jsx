@@ -32,23 +32,25 @@ const MapComponent = () => {
   }, [location]); // Now location will not change on every render
 
   return (
-    <MapContainer
-      center={location}
-      zoom={16}
-      style={{ height: "70vh", width: "100%", zIndex: 0 }}
-      whenCreated={(mapInstance) => (mapRef.current = mapInstance)} // Save the map instance to ref
-      scrollWheelZoom={false} // Disable zooming with the scroll wheel
-      doubleClickZoom={false} // Disable zooming by double-clicking
-      //   dragging={false} // Disable dragging the map
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="© OpenStreetMap contributors"
-      />
-      <Marker position={location}>
-        <Popup>Your location</Popup>
-      </Marker>
-    </MapContainer>
+    <div className="flex justify-center">
+      <MapContainer
+        center={location}
+        zoom={16}
+        style={{ height: "60vh", width: "80%", zIndex: 0 }}
+        whenCreated={(mapInstance) => (mapRef.current = mapInstance)} // Save the map instance to ref
+        scrollWheelZoom={false} // Disable zooming with the scroll wheel
+        doubleClickZoom={false} // Disable zooming by double-clicking
+        //   dragging={false} // Disable dragging the map
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution="© OpenStreetMap contributors"
+        />
+        <Marker position={location}>
+          <Popup>Your location</Popup>
+        </Marker>
+      </MapContainer>
+    </div>
   );
 };
 
