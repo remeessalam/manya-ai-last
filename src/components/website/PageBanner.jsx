@@ -4,7 +4,7 @@ import bannerImg from "../../assets/images/banner.webp";
 const PageBanner = ({ title, desc }) => {
   return (
     <div
-      className="w-full min-h-[45vh] sm:min-h-[35vh] h-fit py-[1rem] bg-cover bg-center relative flex items-center justify-center"
+      className="w-full min-h-[45vh] sm:min-h-[45vh] h-fit py-[1rem] bg-cover bg-center relative flex items-center justify-center"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="absolute top-0 w-full h-full bg-secondary/90"></div>
