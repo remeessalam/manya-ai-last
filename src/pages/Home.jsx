@@ -56,7 +56,7 @@ const Home = () => {
             </span> */}
           </p>
           <h1 className="heading text-stroke">MANYA AI</h1>
-          <p className="max-w-[56rem] mt-2 text-base text-white/80">
+          <p className="max-w-[56rem] mt-2 text-base sm:text-xl text-white/80">
             In today's fast-evolving digital landscape, businesses need
             innovative and reliable solutions to stay ahead. At{" "}
             <strong>MANYA AI</strong> , we offer a wide range of services that
