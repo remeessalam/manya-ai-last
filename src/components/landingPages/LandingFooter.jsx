@@ -93,6 +93,18 @@ const LandingFooter = () => {
           </ul>
         </div>
       </div>
+      <div className="mt-10 border-t border-white/20 pt-5 text-center text-sm text-white/60">
+        <p>
+          © {new Date().getFullYear()} {companyDetails.name}. All rights
+          reserved. |{" "}
+          <Link
+            to="/terms-and-conditions"
+            className="text-primary hover:underline"
+          >
+            Terms and Conditions
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };

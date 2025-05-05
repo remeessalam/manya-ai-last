@@ -16,6 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
 import ServiceDetails from "./pages/ServiceDetails";
+import TermsAndConditions from "./pages/TermsandCondition";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 
@@ -52,6 +53,10 @@ function App() {
             <Route path="*" element={<Navigate to="/" />} />
             <Route path="services/:title" element={<ServiceDetails />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndConditions />}
+            />
 
             {/* Landing pages */}
             <Route
